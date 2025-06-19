@@ -1,0 +1,106 @@
+:root {
+    --primary-color: #4e73df;
+    --secondary-color: #1cc88a;
+    --accent-color: #e74a3b;
+    --light-color: #f8f9fc;
+    --dark-color: #5a5c69;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+.sidebar {
+    background: linear-gradient(180deg, var(--primary-color) 0%, #224abe 100%);
+    box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15);
+}
+
+.nav-link {
+    color: rgba(255, 255, 255, 0.8);
+    padding: 0.75rem 1rem;
+    margin-bottom: 0.2rem;
+    border-radius: 0.35rem;
+    transition: all 0.3s;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.main-content {
+    background-color: var(--light-color);
+}
+
+.avatar-animation {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+}
+
+.voice-animation {
+    width: 150px;
+    height: 150px;
+}
+
+.card {
+    border: none;
+    border-radius: 0.5rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1) !important;
+}
+
+.list-group-item {
+    border-left: none;
+    border-right: none;
+    padding: 1rem 1.25rem;
+}
+
+.list-group-item:first-child {
+    border-top: none;
+}
+
+.delete-btn {
+    background: none;
+    border: none;
+    color: var(--accent-color);
+    float: right;
+    cursor: pointer;
+}
+
+/* Animations */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.pulse {
+    animation: pulse 2s infinite;
+}
+
+@keyframes wave {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+.wave {
+    animation: wave 1.5s infinite;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .main-content {
+        margin-left: 0;
+    }
+}
