@@ -26,7 +26,7 @@
                 
                 <ul class="nav flex-column">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">
+                        <a class="nav-link active" href="index.php">
                             <i class="fas fa-home me-2"></i> Accueil
                         </a>
                     </li>
