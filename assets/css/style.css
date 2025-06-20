@@ -160,3 +160,58 @@ body {
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(220, 53, 69, 0.3);
 }
+
+/* Styles spécifiques aux tâches */
+.task-card {
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: grab;
+}
+
+.task-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.task-card:active {
+    cursor: grabbing;
+}
+
+/* Styles pour les colonnes Kanban */
+.card-header {
+    font-weight: 600;
+}
+
+#todo-tasks, #inprogress-tasks, #done-tasks {
+    min-height: 100px;
+    transition: background-color 0.3s;
+}
+
+/* Styles pour les priorités */
+.border-danger {
+    border-left-width: 4px !important;
+}
+
+.border-warning {
+    border-left-width: 4px !important;
+}
+
+.border-info {
+    border-left-width: 4px !important;
+}
+
+/* Style pour les tâches en retard */
+.task-overdue {
+    border-left: 4px solid #dc3545;
+}
+
+.task-overdue .due-date {
+    color: #dc3545 !important;
+    font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .kanban-column {
+        margin-bottom: 20px;
+    }
+}
