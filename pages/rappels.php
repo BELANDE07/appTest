@@ -21,22 +21,22 @@
                 
                 <ul class="nav flex-column">
                     <li class="nav-item">
-                        <a class="nav-link active" href="index.php">
+                        <a class="nav-link active" href="../index.php">
                             <i class="fas fa-home me-2"></i> Accueil
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="pages/rappels.php">
+                        <a class="nav-link" href="rappels.php">
                             <i class="fas fa-bell me-2"></i> Rappels
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="pages/taches.php">
+                        <a class="nav-link" href="taches.php">
                             <i class="fas fa-tasks me-2"></i> Tâches
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="pages/parametres.php">
+                        <a class="nav-link" href="parametres.php">
                             <i class="fas fa-cog me-2"></i> Paramètres
                         </a>
                     </li>
