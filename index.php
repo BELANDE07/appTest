@@ -14,11 +14,25 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body class="bg-light">
+    <!-- Header Mobile -->
+    <div class="mobile-header">
+        <div class="logo-container">
+            <div class="logo-img"></div>
+            <h3 class="logo-text">Assistant IA</h3>
+        </div>
+        <button class="hamburger-btn" id="menuToggle">
+            <i class="fas fa-bars"></i>
+        </button>
+    </div>
+
+    <!-- Overlay pour fermer le menu -->
+    <div class="overlay" id="overlay"></div>
+
     <div class="container-fluid">
         <div class="row min-vh-100">
             <!-- Sidebar -->
-            <div class="col-md-3 bg-primary text-white p-4 sidebar">
-                <div class="text-center mb-5">
+            <div class="col-md-3 bg-primary text-white p-4 sidebar" id="sidebar">
+                <div class="text-center mb-5 d-md-block d-none">
                     <div id="avatar-animation" class="avatar-animation mb-3"></div>
                     <h2>Assistant IA</h2>
                     <p class="text-white-50">Votre compagnon intelligent</p>
@@ -132,5 +146,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Script personnalisé -->
     <script src="assets/js/script.js"></script>
+    <script src="assets/js/index.js"></script>
 </body>
 </html>

@@ -215,3 +215,140 @@ body {
         margin-bottom: 20px;
     }
 }
+
+ /* Animation pour l'avatar */
+        .avatar-animation {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: linear-gradient(45deg, #0d6efd, #00ff88);
+            animation: gradient 5s ease infinite;
+            background-size: 200% 200%;
+            margin: 0 auto;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Style de base */
+        .sidebar {
+            min-height: 100vh;
+            transition: all 0.3s;
+        }
+
+        .nav-link {
+            border-radius: 5px;
+            margin-bottom: 5px;
+            transition: all 0.2s;
+        }
+
+        .nav-link:hover, .nav-link.active {
+            background-color: rgba(255, 255, 255, 0.1);
+            transform: translateX(5px);
+        }
+
+        /* Style pour le header mobile */
+        .mobile-header {
+            display: none;
+            background-color: #0d6efd;
+            padding: 10px 15px;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 10px;
+            background: linear-gradient(45deg, #0d6efd, #00ff88);
+        }
+
+        .logo-text {
+            color: white;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        .hamburger-btn {
+            color: white;
+            font-size: 1.5rem;
+            background: none;
+            border: none;
+        }
+
+        /* Adaptation mobile */
+        @media (max-width: 768px) {
+            .mobile-header {
+                display: flex;
+            }
+
+            .sidebar {
+                position: fixed;
+                top: 0;
+                left: -100%;
+                width: 80%;
+                max-width: 300px;
+                z-index: 1050;
+                height: 100vh;
+                overflow-y: auto;
+                padding-top: 20px;
+            }
+
+            .sidebar.show {
+                left: 0;
+            }
+
+            .main-content {
+                padding-top: 70px;
+            }
+
+            .overlay {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.5);
+                z-index: 1040;
+                display: none;
+            }
+
+            .overlay.show {
+                display: block;
+            }
+        }
+
+        /* Style pour les cartes de tâches */
+        .kanban-card {
+            margin-bottom: 10px;
+            border-radius: 8px;
+            border-left: 4px solid;
+            transition: all 0.3s;
+        }
+
+        .kanban-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .todo-card {
+            border-left-color: #0dcaf0;
+        }
+
+        .inprogress-card {
+            border-left-color: #ffc107;
+        }
+
+        .done-card {
+            border-left-color: #198754;
+        }
